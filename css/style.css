@@ -1,3 +1,45 @@
+section {
+  margin: 50px;
+  padding: 40px;
+}
+
 #your-ticket {
   display: none;
+}
+
+.input-form {
+  display: inline-block;
+  text-align: center;
+  margin: 0 30px;
+}
+
+input, select {
+  line-height: normal;
+  padding: 4px;
+}
+
+label {
+  display: block;
+  color: var(--bs-danger);
+}
+
+button {
+  color: var(--bs-danger);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cont-btn {
+  display: block;
+  margin-top: 30px;
+}
+
+.ticket-holder {
+  background-color: #808080;
+  height: 100%;
+}
+
+.ticket-detail {
+  border-top: 1px solid black ;
+  border-bottom: 1px solid black ;
 }

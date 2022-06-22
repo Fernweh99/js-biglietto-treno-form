@@ -10,20 +10,20 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
-<body>
+<body class="bg-danger">
 
   <main>
-    <section id="form-ticket">
-      <div class="container">
-        <div>
+    <h2 class="text-center text-white mt-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <section id="form-ticket" class="container text-center bg-white rounded">
+        <div class="input-form">
           <label for="user-name">Nome e Cognome</label>
           <input type="text" id="user-name" name="user-name" value="Daniele Di Mento" placeholder="Scrivi qui..">
         </div>
-        <div>
+        <div class="input-form">
           <label for="trip-kms">Km da percorrere</label>
           <input type="number" id="trip-kms" name="trip-kms" value="10" placeholder="Scrivi qui..">
         </div>
-        <div>
+        <div class="input-form">
           <label for="age-range">Fascia d'età</label>
           <select name="age-range" id="age-range">
             <option value="minorenne">Minorenne</option>
@@ -31,17 +31,43 @@
             <option value="maggiorenne">Maggiorenne</option>
           </select>
         </div>
-        <button id="generate">Genera</button>
-        <button id="restore">Annulla</button>
-      </div>
+        <div class="cont-btn">
+          <button id="generate">Genera</button>
+          <button id="restore">Annulla</button>
+        </div>
     </section>
-    <section id="your-ticket">
-      <div class="container">
-        <h5>NOME PASSEGGERO</h5><p id="ticket-username"></p>
-        <h6>Offerta</h6><p id="ticket-offer"></p>
-        <h6>Carrozza</h6><p id="ticket-wagon"></p>
-        <h6>Codice CP</h6><p id="ticket-cod"></p>
-        <h6>Costo biglietto</h6><p id="ticket-price"></p>
+    <h2 class="text-center text-white">IL TUO BIGLIETTO</h2>
+    <section id="your-ticket" class="container text-center bg-white rounded">
+      <div class="row g-0">
+        <div class="col-12">
+          <h4 class="my-3">DETTAGLIO PASSEGGERI</h4>
+        </div>
+        <div class="col-3">
+          <div class="ticket-holder">
+            <h5>NOME PASSEGGERO</h5>
+            <p id="ticket-username"></p>
+          </div>
+        </div>
+        <div class="col ticket-detail">
+          <div class="row">
+            <div class="col">
+                <h6>Offerta</h6>
+                <p id="ticket-offer"></p>
+            </div>
+            <div class="col">
+              <h6>Carrozza</h6>
+              <p id="ticket-wagon"></p>
+            </div>
+            <div class="col">
+              <h6>Codice CP</h6>
+              <p id="ticket-cod"></p>
+            </div>
+            <div class="col">
+              <h6>Costo biglietto</h6>
+              <p id="ticket-price"></p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
